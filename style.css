@@ -264,6 +264,19 @@ main li + li {
     margin-top: 0.35rem;
 }
 
+/* Support-page CSV fields remain distinct and readable on narrow screens. */
+#app code {
+    color: #087b43;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 0.94em;
+    overflow-wrap: anywhere;
+}
+
+#app > ol {
+    max-width: 78ch;
+    padding-left: 2.4rem;
+}
+
 #about-paragraphs {
     grid-column: 1;
     max-width: 82ch;

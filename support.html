@@ -29,40 +29,145 @@
       &lt;<span class="stylized-t">T</span>&gt;<a id="store-link" href="https://workspace.google.com/marketplace/app/text_styles/727841997066" target="_blank">Text Styles</a>&lt;/<span class="stylized-t">T</span>&gt;
     </div>
     <main id="app">
-      <h1>Trouble Shooting Guide/Common Problems:</h1>
-      <h3>Your Style Is Not Working Properly</h3>
-      <p>If clicking <em>Apply Style</em> results in something different from what you expected, you may have entered something in wrong. In that case, the program resets to its defaults. Double-check that you’ve correctly entered all information, for example:</p>
+      <h1 class="title">Trouble Shooting Guide</h1>
+
+      <h2>The date shown beside a person is wrong—or I do not want to see it</h2>
+      <p>The date is the date that person was added to NameKeep. It is not their birthday, age, or a date taken from their description.</p>
+      <p>To hide these dates, open <strong>Settings</strong> and turn off <strong>Show date</strong>.</p>
+
+      <h2>I cannot find someone I saved</h2>
+      <p>Use the search bar at the top of the main screen. Search looks through:</p>
       <ul>
-        <li>The font is spelled correctly (e.g., Times New Roman)</li>
-        <li>The colors are in proper hex format (i.e., #0084ff)</li>
+        <li>A person's name</li>
+        <li>Their description</li>
+        <li>Their label name</li>
       </ul>
-      <p>You can find the hex value of any color using the Google Docs™ <em>Custom Color</em> feature or using any number of online tools.</p>
+      <p>Also check the <strong>No Label</strong> section. People without a label appear there rather than under one of your named labels. If you still can't find them, check the <strong>Trash</strong> under <strong>Settings</strong> at the top right</p>
 
-      <h3>Not Saving Styles Before Using Them</h3>
-      <p>Not saving a style before trying to use it can cause some problems. It’s always best practice to save a style before trying to use it.</p>
+      <h2>I added a person without a name</h2>
+      <p>NameKeep allows you to save a person without entering a name, so you can capture what you remember in the moment. It gives the person a temporary placeholder name. You can tap that person later and replace it with their real name.</p>
 
-      <h3>Clicking <em>View Less Options</em> Before Saving</h3>
-      <p>After clicking <em>View More Styling Options</em>, you’ll see additional styling options available like <em>font-size</em>, <em>underline</em>, <em>bold</em>, and <em>italicize</em>. However, if you make any changes and <i>don’t</i> save the style before clicking <em>View Less</em>, all your selections will be reset to their defaults.</p>
+      <h2>I accidentally deleted someone</h2>
+      <p>Deleting a person first moves them to <strong>Trash</strong>. Go to <strong>Settings → Trash</strong>, then choose <strong>Restore</strong> to put them back in your list.</p>
+      <p>Choosing <strong>Delete Forever</strong> for a person, or <strong>Empty Trash</strong>, permanently removes those people and cannot be undone.</p>
 
-      <h3>Trying To Get Styling To Work Across New Lines</h3>
-      <p>Unfortunately, by the nature of Google Docs™, styling across new lines (paragraph breaks) is nonviable. For example, this will not work: <br>&lt;This is line one <br>This is line two&gt;</p>
-      <p>Solutions:</p>
+      <h2>I want to delete a label, but keep the people in it</h2>
+      <p>When you delete a label, NameKeep lets you choose what happens to the people assigned to it:</p>
       <ul>
-        <li>If you really need this to work, you can press <em>Shift+Enter</em> (called a soft break) instead of just <em>Enter</em>, and it will work then.</li>
-        <li>Otherwise, you need to place an ending marker at the end of every paragraph / before every new line.</li>
+        <li>Move them to another label</li>
+        <li>Move them to <strong>No Label</strong></li>
+        <li>Move them to <strong>Trash</strong></li>
+      </ul>
+      <p>Choose a destination label if you want to keep everyone organized without re-entering their information.</p>
+
+      <h2>My list is in an unexpected order</h2>
+      <p>In <strong>Settings → Sorting</strong>, you can choose how labels and people are ordered:</p>
+      <ul>
+        <li>Date, newest first</li>
+        <li>Date, oldest first</li>
+        <li>Alphabetical</li>
+      </ul>
+      <p>People are sorted within each label section.</p>
+
+      <h2>Importing people from a CSV file</h2>
+      <p>Importing is the quickest way to bring an existing list into NameKeep. Go to <strong>Settings → Import people</strong>, review the guide, then choose a CSV file.</p>
+      <p>A CSV is a plain-text spreadsheet file. You can create one in Excel, Google Sheets, Numbers, or another spreadsheet app, then export or download it as a <code>.csv</code> file.</p>
+
+      <h3>Required format</h3>
+      <p>Your first row must include a column named <code>name</code>.</p>
+      <p>The complete supported format is:</p>
+      <p><code>name,description,label,label_color</code></p>
+      <p>Only <code>name</code> is required. The other columns are optional.</p>
+
+      <h3>Example 1: A simple import</h3>
+      <ol>
+        <li><code>name,description,label,label_color</code></li>
+        <li><code>Maya Chen,Frontend developer on the mobile team,Work,green</code></li>
+        <li><code>Jordan Lee,"Met at the quarterly planning meeting",Work,green</code></li>
+        <li><code>Sarah,"Sits near the front; works at Starbucks",Classmates,blue</code></li>
+        <li><code>Alex,"Study group; likes climbing",Friends,violet</code></li>
+      </ol>
+      <p>This creates the labels <strong>Work</strong>, <strong>Classmates</strong>, and <strong>Friends</strong>, then adds the people beneath them.</p>
+
+      <h3>Example 2: Labels, notes, and people without labels</h3>
+      <ol>
+        <li><code>name,description,label,label_color</code></li>
+        <li><code>Priya Shah,"Neighbor in apartment 4B",Neighbors,teal</code></li>
+        <li><code>Marcus Hill,"Met at the conference",Networking,orange</code></li>
+        <li><code>Elena Ruiz,"Friend of Jamie",,</code></li>
+        <li><code>Noah Kim,,,&nbsp;</code></li>
+      </ol>
+      <p>Priya and Marcus receive labels. Elena and Noah are imported without a label and appear in the <strong>No Label</strong> section.</p>
+
+      <h3>CSV rules and limits</h3>
+      <ul>
+        <li>The file name must end in <code>.csv</code>.</li>
+        <li>The file must be 2 MB or smaller.</li>
+        <li>A file can contain up to 5,000 people.</li>
+        <li>Names can be up to 30 characters.</li>
+        <li>Descriptions can be up to 100 characters.</li>
+        <li>Label names can be up to 30 characters.</li>
+        <li><code>description</code>, <code>label</code>, and <code>label_color</code> may be left blank.</li>
+        <li>Valid label colors are: <code>green</code>, <code>blue</code>, <code>violet</code>, <code>pink</code>, <code>red</code>, <code>orange</code>, <code>amber</code>, <code>teal</code>, and <code>gray</code>.</li>
+        <li>A <code>label_color</code> must only be provided when that row has a label.</li>
+        <li>If a new label has no <code>label_color</code>, NameKeep uses your current default label color.</li>
+        <li>If a cell contains a comma, wrap its value in double quotes.</li>
+      </ul>
+      <p>For example, this is correct:</p>
+      <p><code>name,description,label,label_color</code></p>
+      <p><code>Maya Chen,"Met at a cafe, works in design",Friends,pink</code></p>
+      <p>Without the quotation marks, the comma would split the description into separate columns.</p>
+
+      <h3>What happens when you import</h3>
+      <p>Before saving anything, NameKeep shows a summary of the people and new labels it found. You can cancel at that point if something does not look right.</p>
+      <p>NameKeep will:</p>
+      <ul>
+        <li>Reuse existing labels with the same name.</li>
+        <li>Create new labels as needed.</li>
+        <li>Skip exact duplicate people instead of adding them again.</li>
+        <li>Skip invalid rows and identify their line numbers in the import review.</li>
+      </ul>
+      <p>A duplicate means the person has the same name, description, and label as someone already in NameKeep—or as an earlier row in the same import.</p>
+
+      <h3>Common import problems</h3>
+      <p><strong>“The CSV must contain a ‘name’ column.”</strong><br>Add a header row at the top of your file. It must include <code>name</code>, for example:</p>
+      <p><code>name,description,label,label_color</code></p>
+      <p><strong>“The selected CSV file is empty.”</strong><br>Make sure the file contains both a header row and at least one person.</p>
+      <p><strong>“The selected file is not valid CSV.”</strong><br>Check for unmatched quotation marks or broken columns. If a value contains a comma, put the entire value in double quotes.</p>
+      <p><strong>A row was skipped.</strong><br>Check that it has a name, stays within the character limits, and uses one of the supported label colors. Rows with a color but no label are also skipped.</p>
+      <p><strong>“Label … has conflicting colors in the CSV.”</strong><br>Use one color for each new label. For example, do not use both <code>green</code> and <code>blue</code> for rows labeled <code>Work</code> in the same import.</p>
+
+      <h3>Tip: export first</h3>
+      <p>If you are unsure about the format, use <strong>Settings → Export people</strong> to create a CSV from your current NameKeep data. That exported file is a valid template you can edit and import again later.</p>
+
+      <h2>Exporting people</h2>
+      <p>Choose <strong>Settings → Export people</strong> to save or share a CSV copy of your current people and labels.</p>
+      <p>Exports include:</p>
+      <p><code>name,description,label,label_color</code></p>
+      <p>Exporting is useful for backups, editing a larger list in a spreadsheet, or moving your list to another device or app.</p>
+
+      <h2>Memory reminders</h2>
+      <p>Memory reminders are optional notifications that quiz you on people you add from that point onward. In <strong>Settings → Memory reminders</strong>, choose one or more reminder times:</p>
+      <ul>
+        <li>1 day later</li>
+        <li>3 days later</li>
+        <li>1 week later</li>
+        <li>2 weeks later</li>
+      </ul>
+      <p>NameKeep needs notification permission from your device. If reminders are not arriving, check that notifications are allowed for NameKeep in your device settings.</p>
+
+      <h2>Display and appearance</h2>
+      <p>In <strong>Settings</strong>, you can also:</p>
+      <ul>
+        <li>Use your system appearance, light mode, or dark mode.</li>
+        <li>Choose a default label color.</li>
+        <li>Choose a default label for newly added people.</li>
+        <li>Show or hide the date each person was added.</li>
+        <li>Turn on <strong>Condensed view</strong> to fit more people on screen.</li>
       </ul>
 
-      <h3>Saving a New Style With the Same Name as a Previous One</h3>
-      <p>Unique names are <u>required</u> for all styles. Trying to save a new style with the same name as an old one will only result in the old style being overwritten.</p>
-
-      <h3>Renaming Styles</h3>
-      <p>If you try to rename a style, it will create a whole new style with that name and the same data. Just delete the old one and you're fine.</p>
-
-      <h3>Duplicating a Style</h3>
-      <p>The feature described above is actually a convenient way to duplicate a style. Change the style name and hit save, and you will have a new duplicate style with a different name.</p>
-
-      <h3>Recurring Problem That Was Not Covered Here</h3>
-      <p>If you’ve noticed a recurring problem that hasn’t been mentioned above, please give me a description of the issue <a href="https://github.com/SonOfAthena1/Text-Styles-Google-Docs-Extension/issues" target="_blank">here</a>. Click on the green <em>Issue</em> button in the top right corner, add a <em>title</em> and <em>description</em>, then scroll down and click the green <em>Create</em> button in the bottom right-hand corner.</p>
+      <h2>Recurring Problem Not Covered Here</h2>
+      <p>If you’ve noticed a recurring problem that hasn’t been mentioned above, please give me a description of the issue <a href="https://github.com/SonOfAthena1/NameKeep/issues" target="_blank">here</a>. Click on the green <em>Issue</em> button in the top right corner, add a <em>title</em> and <em>description</em>, then scroll down and click the green <em>Create</em> button in the bottom right-hand corner.</p>
 
     </main>
     <footer>
