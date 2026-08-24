@@ -3,8 +3,8 @@
     --green: #128044;
     --green-dark: #0d6738;
     --green-deep: #084827;
-    --blue: #1b7da9;
-    --blue-dark: #12638a;
+    --blue: #168fc6;
+    --blue-dark: #0b6f9d;
     --ink: #15291d;
     --muted: #596b60;
     --surface: #ffffff;
@@ -63,8 +63,8 @@ a:focus-visible {
     padding: 1.05rem max(1.5rem, calc((100vw - 1240px) / 2));
     overflow: hidden;
     background:
-        radial-gradient(circle at 82% -140%, rgba(35, 135, 179, 0.28), transparent 52%),
-        linear-gradient(108deg, #16814a 0%, #137442 34%, #10683c 65%, #0d5f39 100%);
+        radial-gradient(circle at 82% -120%, rgba(22, 143, 198, 0.46), transparent 55%),
+        linear-gradient(108deg, #16814a 0%, #137442 34%, #126d4c 60%, #116b78 100%);
     border-bottom: 0;
     box-shadow:
         inset 0 1px rgba(255, 255, 255, 0.13),
@@ -164,8 +164,8 @@ a:focus-visible {
     color: #f8fafc;
     background:
         radial-gradient(circle at 18% 0%, rgba(18, 128, 68, 0.34), transparent 32%),
-        radial-gradient(circle at 82% 120%, rgba(27, 125, 169, 0.3), transparent 38%),
-        linear-gradient(145deg, #11291c 0%, #06130d 58%, #071922 100%);
+        radial-gradient(circle at 82% 120%, rgba(22, 143, 198, 0.48), transparent 42%),
+        linear-gradient(145deg, #11291c 0%, #06130d 52%, #062436 100%);
     margin-top: -1px;
     border-top: 0;
     border-bottom: 1px solid rgba(27, 125, 169, 0.25);
@@ -528,8 +528,8 @@ footer {
     color: rgba(255, 255, 255, 0.88);
     overflow: hidden;
     background:
-        radial-gradient(circle at 85% 150%, rgba(27, 125, 169, 0.28), transparent 38%),
-        linear-gradient(108deg, #16814a 0%, #137442 34%, #10683c 65%, #0d5f39 100%);
+        radial-gradient(circle at 85% 150%, rgba(22, 143, 198, 0.5), transparent 42%),
+        linear-gradient(108deg, #16814a 0%, #137442 34%, #126d4c 60%, #116b78 100%);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow:
         0 -16px 38px rgba(8, 73, 41, 0.22),
