@@ -1,50 +1,45 @@
-# Text Styles Website
+# NameKeep Website
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Built with HTML/CSS](https://img.shields.io/badge/Built%20with-HTML%20%26%20CSS-blue)
+![Built with HTML, CSS, and Vite](https://img.shields.io/badge/Built%20with-HTML%2C%20CSS%2C%20and%20Vite-646CFF)
 
-This repository hosts the website for **Text Styles™**, a Google Docs add-on that lets you create, save, and apply custom markdown-style formatting in your documents.
+This repository contains the public website for **NameKeep** — a simple mobile app for remembering the people you meet. The site introduces the app, explains its privacy approach, provides support information, and shares details about its creator.
 
-🔗 Add-on Repository: [SonOfAthena1/Text-Styles-Google-Docs-Extension](https://github.com/SonOfAthena1/Text-Styles-Google-Docs-Extension)
+## About NameKeep
 
----
+NameKeep is designed to make it quick and easy to save a person's name, a helpful description, and an optional label such as Gym, Work, or Class. People can be searched, grouped by label, sorted in different ways, and exported as a CSV file.
 
-## About the Add-on
+The app is built around privacy: it does not require an account, email address, or phone number, and its data is stored locally on the device. Optional memory-quiz notifications can help users practice remembering people they met recently.
 
-**Text Styles™** is an all-purpose Google Docs markdown add-on that allows you to create your own custom style markdowns and save them for later use.  
+## Website Pages
 
-For example, you could define a style called **"Code"** with:
-- Font set to **Consolas**  
-- Highlight color set to `#efefef` (light gray)  
-- `<` and `>` as style markers  
+- **Home** — An overview of NameKeep and its features.
+- **Privacy Policy** — How the app and website handle data.
+- **Terms of Service** — Terms for using NameKeep and this website.
+- **Support** — Help with importing, exporting, and using NameKeep.
+- **Developer** — Information about Leland Cuellar, the creator of NameKeep.
 
-You could then write something like `<print("Hello World")>` in Python or `<System.out.println("Hello World")>` in Java, and with one click, Text Styles will apply the saved formatting and optionally remove the markers.
+## Development
 
----
+The site is a Vite project built with plain HTML, CSS, and a small JavaScript entry point. Website images and other static assets live in `public/`.
 
-## Website Overview
+To run it locally:
 
-This website provides information and resources for users of the Text Styles add-on:
+```bash
+npm install
+npm run dev
+```
 
-- **Home / About** – Introduction to Text Styles and what it does.  
-- **Privacy Policy** – Details on how user data is handled.  
-- **Terms of Service** – The rules for using the add-on and website.  
-- **Support** – Contact information and resources for help.  
+To create a production build:
 
-The site is built using plain **HTML and CSS**.
-
----
-
-## Support
-
-If you need help with Text Styles, you can:
-
-- Visit the Support page on this website
-- Open an issue on the [main add-on repository](https://github.com/SonOfAthena1/Text-Styles-Google-Docs-Extension/issues)
-
----
+```bash
+npm run build
+```
 
 ## License
 
-This website is licensed under the [MIT License](https://github.com/SonOfAthena1/AboutTextStylesWebsite/blob/master/LICENSE)  
-Text Styles™ add-on source code: **PolyForm Noncommercial 1.0.0** (see the add-on repo).
+The code and website materials in this repository are licensed under the [MIT License](LICENSE).
+
+The **NameKeep mobile app is a separate project**. Its license has not yet been decided and is not granted by this repository's MIT license.
+
+NameKeep™ and its logo are trademarks of Leland Cuellar. The MIT License does not grant rights to use those trademarks.
