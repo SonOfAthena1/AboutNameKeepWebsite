@@ -42,4 +42,4 @@ The code and website materials in this repository are licensed under the [MIT Li
 
 The **NameKeep mobile app is a separate project**. Its license has not yet been decided and is not granted by this repository's MIT license.
 
-NameKeep™ and its logo are trademarks of Leland Cuellar. The MIT License does not grant rights to use those trademarks.
+NameKeep™ and its logo are pending trademarks of Leland Cuellar. The MIT License does not grant rights to use those trademarks.
