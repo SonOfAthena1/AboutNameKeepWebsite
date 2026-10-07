@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Built with HTML, CSS, and Vite](https://img.shields.io/badge/Built%20with-HTML%2C%20CSS%2C%20and%20Vite-646CFF)
 
-This repository contains the public website for **NameKeep** — a simple mobile app for remembering the people you meet. The site introduces the app, explains its privacy approach, provides support information, and shares details about its creator.
+This repository contains the public website for **NameKeep** — a simple mobile app for remembering the people you meet. The site introduces the app, explains its privacy approach, provides support information, and shares release notes.
 
 ## About NameKeep
 
@@ -17,7 +17,7 @@ The app is built around privacy: it does not require an account, email address, 
 - **Privacy Policy** — How the app and website handle data.
 - **Terms of Service** — Terms for using NameKeep and this website.
 - **Support** — Help with importing, exporting, and using NameKeep.
-- **Developer** — Information about Leland Cuellar, the creator of NameKeep.
+- **Release Notes** — Changes and improvements in each NameKeep release.
 
 ## Development
 
