@@ -40,6 +40,6 @@ npm run build
 
 The code and website materials in this repository are licensed under the [MIT License](LICENSE).
 
-The **NameKeep mobile app is a separate project**. Its license has not yet been decided and is not granted by this repository's MIT license.
+The **NameKeep mobile app is a separate project**, licensed under the [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0). The app is not covered by this repository's MIT license.
 
 NameKeep™ and its logo are pending trademarks of Leland Cuellar. The MIT License does not grant rights to use those trademarks.
